@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Вихров Алексей](https://up.htmlacademy.ru/htmlcss/29/user/1350493).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Соколов](https://htmlacademy.ru/profile/costigans).
 
 ---
 
