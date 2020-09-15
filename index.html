@@ -2,22 +2,24 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>HTML Academy: «Nerds»</title>
+	<title>Интернет магазин «Nerds»</title>
 </head>
 
 <body>
 	<header>
 		<nav>
 			<a>
-				<img src="#" alt="Логотип интернет магазина «Nerds»">
+				<!-- думал дописать атрибуты размеров при непосредственной вставке графики -->
+				<img src="#" width="160" height="65" alt="Логотип интернет магазина «Nerds»">
 			</a>
 			<ul>
-				<li><a href="blank.html">Студия</a></li>
-				<li><a href="blank.html">Клиенты</a></li>
+				<!-- в лекции говорили, что можно использовать вместо заглушки # пустую страницу blank, собственно поэтому и сделал так изначально -->
+				<li><a href="#">Студия</a></li>
+				<li><a href="#">Клиенты</a></li>
 				<li><a href="catalog.html">Магазин</a></li>
-				<li><a href="blank.html">Контакты</a></li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
-			<a href="blank.html">Корзина</a>
+			<a href="#">Корзина</a>
 		</nav>
 	</header>
 
@@ -27,11 +29,11 @@
 			<p>Долго, дорого,<br>скрупулезно.</p>
 			<p>Математически выверенный  дизайн<br>
 			для вашего сайта или мобильного приложения.</p>
-			<a href="blank.html">Узнать больше</a>
+			<a href="#">Узнать больше</a>
 			<ul>
-				<li><button type="button"></button></li>
-				<li><button type="button"></button></li>
-				<li><button type="button"></button></li>
+				<li><button type="button">Слайд 1</button></li>
+				<li><button type="button">Слайд 2</button></li>
+				<li><button type="button">Слайд 3</button></li>
 			</ul>
 		</div>
 
@@ -54,6 +56,7 @@
 					<h3>Презентации</h3>
 					<p>Вы даже не подозреваете,<br>
 					насколько вы изумительны!</p>
+					<!--Это могла бы быть кнопка, отправляющая в корзину товар, но товар слишком специфичный, для ссылки тоже вроде не подходит, возможно кнопка, которая вызывающая попап?-->
 					<button type="button">Заказать</button>
 				</li>
 			</ul>
@@ -97,10 +100,10 @@
 		<section>
 			<h2>Производители</h2>
 			<ul>
-				<li><a href="blank.html">hyml academy</a></li>
-				<li><a href="blank.html">barbershop borodinski</a></li>
-				<li><a href="blank.html">pink</a></li>
-				<li><a href="blank.html">mishka</a></li>
+				<li><a href="#">hyml academy</a></li>
+				<li><a href="#">barbershop borodinski</a></li>
+				<li><a href="#">pink</a></li>
+				<li><a href="#">mishka</a></li>
 			</ul>
 		</section>
 	</main>
@@ -113,26 +116,22 @@
 				<p>191186, Санкт-Петербург,<br>
 				ул. Б. Конюшенная, д. 19/8</p>
 				<p>тел. +7 (812) 275-75-75</p>
-				<!-- не совсем понятно по ТЗ, это должна быть кнопка или ссылка -->
 				<button type="button">Напишите нам</button>
 			</div>
 		</section>
 
 		<section>
-
 			<ul>
 				<li><a href="#">Вконтакте</a></li>
 				<li><a href="#">Фейсбук</a></li>
 				<li><a href="#">Инстаграм</a></li>
 			</ul>
-		
-			<h2>Давайте дружить, это выгодно!</h2>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
+			<p>Давайте дружить, это выгодно!<br>
+			<span>Скидка 10% для друзей из социальных сетей.</span></p>
 		</section>
 	</footer>
 
 	<section>
-		<!-- не понятно по ТЗ как будет выглядеть -попап, поле для ввода имени и поле для текста?-->
 		<h2>Личный кабинрет</h2>
 		<p>Ваше имя:</p>
 		<!-- Здесь будет форма -->
