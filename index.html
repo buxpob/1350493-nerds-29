@@ -1,138 +1,161 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>Интернет магазин «Nerds»</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-	<header>
-		<nav>
-			<a>
+<body class="page-bady">
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="main-header-logo">
 				<img src="#" width="160" height="65" alt="Логотип интернет магазина «Nerds»">
 			</a>
-			<ul>
-				<li><a href="#">Студия</a></li>
-				<li><a href="#">Клиенты</a></li>
-				<li><a href="catalog.html">Магазин</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<a href="#">Корзина</a>
+			<div class="main-navigation-wrapper">
+				<ul class="site-navigation">
+					<li><a class="site-navigation__link navigation-item" href="#">Студия</a></li>
+					<li><a class="site-navigation__link navigation-item" href="#">Клиенты</a></li>
+					<li><a class="site-navigation__link navigation-item" href="catalog.html">Магазин</a></li>
+					<li><a class="site-navigation__link navigation-item" href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="cart-navigation">
+				<a class="cart-navigation__link navigation-item" href="#">Корзина</a>
+			</div>
 		</nav>
+
 	</header>
 
-	<main>
-		<h1>Интернет магазин «Nerds»</h1>
-		<div>
-			<p>Долго, дорого,<br>скрупулезно.</p>
-			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-			<a href="#">Узнать больше</a>
-			<ul>
-				<li><button type="button">Слайд 1</button></li>
-				<li><button type="button">Слайд 2</button></li>
-				<li><button type="button">Слайд 3</button></li>
-			</ul>
-		</div>
+	<main class="container">
 
-		<section>
-			<h2>Услуги</h2>
-			<ul>
-				<li>
-					<h3>Веб-сайты</h3>
-					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a href="#">Заказать</a>
+		<h1 class="visually-hidden">Интернет магазин «Nerds»</h1>
+
+		<section class="slides">
+			<h2 class="visually-hidden">Дополнительная информация</h2>
+			<!-- можно так классы назвать или лучше не надо, что бы не запутаться? -->
+			<div class="slide slide1">
+				<p class="slide__slogan">Долго, дорого,<br>скрупулезно.</p>
+				<p class="slide__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+				<a class="button slide__button" href="#">Узнать больше</a>
+			</div>
+			<!-- Я правильно понимаю, что потом я просто буду при клике на кнопку делать некоторые дивы невидимыми, если да, то можно ли сделать такие классы, в смысле такие же, но с добавлением номера слайда-->
+			<div class="slide slide2">
+				<p class="slide__slogan">Любим математику<br>как никто другой</p>
+				<p class="slide__text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+				<a class="button slide__button" href="#">Узнать больше</a>
+			</div>
+			<div class="slide slide3">
+				<p class="slide__slogan">Только ночь,<br>только хардкор</p>
+				<p class="slide__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+				<a class="button slide__button" href="#">Узнать больше</a>
+			</div>
+			<ul class="list-slides">
+				<li><button class="list-slides__button" type="button">Слайд 1</button></li>
+				<li><button class="list-slides__button" type="button">Слайд 2</button></li>
+				<li><button class="list-slides__button" type="button">Слайд 3</button></li>
+			</ul>
+		</section>
+
+		<section class="services">
+			<h2 class="visually-hidden">Услуги</h2>
+			<ul class="services-list">
+				<li class="service__item">
+					<h3 class="service__title">Веб-сайты</h3>
+					<p class="service__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<a class="service__link service__link1 button" href="#">Заказать</a>
 				</li>
-				<li>
-					<h3>Приложения</h3>
-					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-					<a href="#">Заказать</a>
+				<li class="service__item">
+					<h3 class="service__title">Приложения</h3>
+					<p class="service__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+					<a class="service__link service__link2 button" href="#">Заказать</a>
 				</li>
-				<li>
-					<h3>Презентации</h3>
-					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-					<a href="#">Заказать</a>
+				<li class="service__item">
+					<h3 class="service__title">Презентации</h3>
+					<p class="service__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+					<a class="service__link service__link3 button" href="#">Заказать</a>
 				</li>
 			</ul>
 		</section>
 
-		<div>
-			<section>
-				<h2>О нас</h2>
-				<p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+		<div class="info-wrapper">
+			<section class="info">
+				<!-- по БЭМ например параграфы нужно делать элементами или блоками, честно говоря не совсем понимаю как лучше -->
+				<h2 class="visually-hidden">О нас</h2>
+				<p class="info__slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+				<p class="info__description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
 				превыше креатива. Работаем не покладая рук, как роботы.</p>
-				<p>Выполняем заказы на разработку:</p>
-				<ul>
-					<li>Веб-сайтов любой сложности</li>
-					<li>Мобильных приложений для iOS и Android</li>
-					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				<p class="info__text">Выполняем заказы на разработку:</p>
+				<ul class="info-list">
+					<li class="info-list__item">Веб-сайтов любой сложности</li>
+					<li class="info-list__item">Мобильных приложений для iOS и Android</li>
+					<li class="info-list__item">Слайдшоу и видео для корпоративных презентаций</li>
 				</ul>
 			</section>
 
-			<section>
-				<h2>Процентные показатели</h2>
+			<section class="indicators">
+				<h2 class="visually-hidden">Наши показатели</h2>
 				<img src="#" width="360" height="208" alt="Логотип интернет магазина «Nerds»">
-					<p>С 2004 года Любим точность во всем:</p>
-					<ul>
-						<li>
-							<p>146 <span>%</span></p>
-							<p>Уровень самоотдачи</p>
-						</li>
-						<li>
-							<p>100 <span>%</span></p>
-							<p>Соблюдение сроков</p>
-						</li>
-						<li>
-							<p>50 <span>%</span></p>
-							<p>Минимальная предоплата</p>
-						</li>
-					</ul>
+				<p class="indicators__slogan">С 2004 года Любим точность во всем:</p>
+				<ul class="indicators-list">
+					<li class="indicators__item">
+						<p class="indicators__info">146<span class="indicators-item__info_little">%</span></p>
+						<p class="indicators__text">Уровень самоотдачи</p>
+					</li>
+					<li class="indicators-list__item">
+						<p class="indicators__info">100<span class="indicators-item__info_little">%</span></p>
+						<p class="indicators__text">Соблюдение сроков</p>
+					</li>
+					<li class="indicators-list__item">
+						<p class="indicators__info">50<span class="indicators-item__info_little">%</span></p>
+						<p class="indicators__text">Минимальная предоплата</p>
+					</li>
+				</ul>
 			</section>
 		</div>
 
-		<section>
-			<h2>Производители</h2>
-			<ul>
-				<li><a href="#">Html academy</a></li>
-				<li><a href="#">Barbershop Borodinski</a></li>
-				<li><a href="#">Pink</a></li>
-				<li><a href="#">Mishka</a></li>
+		<section class="manufacturers">
+			<h2 class="visually-hidden">Производители</h2>
+			<ul class="manufacturers-list">
+				<li><a class="manufacturers__link" href="#">HTML Academy</a><img src="#" alt="Логотип HTML Academy"></li>
+				<li><a class="manufacturers__link" href="#">Barbershop Borodinski</a><img src="#" alt="Логотип барбершопа Бородинский"></li>
+				<li><a class="manufacturers__link" href="#">Pink</a><img src="#" alt="Логотип фирмы Pink"></li>
+				<li><a class="manufacturers__link" href="#">Mishka</a><img src="#" alt="Логотип фирмы Mishka"></li>
 			</ul>
 		</section>
 	</main>
 
-	<footer>
-		<section>
-			<h2>Как нас найти</h2>
-			<div>
-				<p>Nёrds design studio</p>
-				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				<p>тел. +7 (812) 275-75-75</p>
-				<a href="#">Напишите нам</a>
+	<footer class="main-footer">
+		<section class="footer-contacts">
+			<h2 class="visually-hidden">Как нас найти</h2>
+			<div class="contacts-box">
+				<h3 class="contacts-box__title">Nёrds design studio</h3>
+				<p class="contacts-box__text">
+					191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+					тел.<a href="tel:+78122757575"></a>+7 (812) 275-75-75
+				</p>
+				<a class="contacts-button button" href="#">Напишите нам</a>
 			</div>
 		</section>
 
-		<section>
-			<h2>Социальные сети</h2>
-			<ul>
-				<li><a href="#">Вконтакте</a></li>
-				<li><a href="#">Фейсбук</a></li>
-				<li><a href="#">Инстаграм</a></li>
+		<section class="footer-social">
+			<h2 class="visually-hidden">Социальные сети</h2>
+			<ul class="footer-social-list">
+				<!-- я правильно  -->
+				<li><a class="footer-social__link" href="#">Вконтакте</a></li>
+				<li><a class="footer-social__link" href="#">Фейсбук</a></li>
+				<li><a class="footer-social__link" href="#">Инстаграм</a></li>
 			</ul>
-			<p>Давайте дружить, это выгодно!</p>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
+			<p class="footer-social__slogan">Давайте дружить, это выгодно!</p>
+			<p class="footer-social__text">Скидка 10% для друзей из социальных сетей.</p>
 		</section>
 	</footer>
 
-	<section>
-		<h2>Личный кабинрет</h2>
+	<section class="modal">
+		<h2 class="modal__title">Напишите нам</h2>
 		<p>Ваше имя:</p>
-		<!-- Здесь будет форма -->
-		<button type="button">Закрыть</button>
-	</section>
-
-	<section>
-		<h2>Как до нас добраться</h2>
 		<!-- Здесь будет форма -->
 		<button type="button">Закрыть</button>
 	</section>
