@@ -1,76 +1,157 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Каталог интернет магазина «Nerds»</title>
+	<title>Интернет магазин «Nerds»</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
 
-	<header>
-		<nav>
-			<a href="index.html">
+<body class="page-bady">
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="main-header-logo" href="index.html">
 				<img src="#" width="160" height="65" alt="Логотип интернет магазина «Nerds»">
 			</a>
-			<ul>
-				<li><a href="#">Студия</a></li>
-				<li><a href="#">Клиенты</a></li>
-				<li><a href="catalog.html">Магазин</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<a href="#">Корзина</a>
+			<div class="main-navigation-wrapper">
+				<ul class="site-navigation">
+					<li><a class="site-navigation__link navigation-item" href="#">Студия</a></li>
+					<li><a class="site-navigation__link navigation-item" href="#">Клиенты</a></li>
+					<li><a class="site-navigation__link navigation-item" href="catalog.html">Магазин</a></li>
+					<li><a class="site-navigation__link navigation-item" href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="cart-navigation">
+				<a class="cart-navigation__link navigation-item" href="#">Корзина</a>
+			</div>
 		</nav>
+
 	</header>
 
-	<main>
-		<h1>Магазин готовых шаблонов</h1>
-		<section>
-			<h2>Фильтр товаров</h2>
+	<main class="container">
+		<div class="container-title-wrapper">
+			<h1 class="container-title">Магазин готовых шаблонов</h1>
+		</div>
+		<section class="filters">
+			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<!-- Здесь будет форма -->
 		</section>
 
-		<section>
-			<h2>Сортировка товаров</h2>
-			<ul>
-				<li><button type="button">По цене</button></li>
-				<li><button type="button">По типу</button></li>
-				<li><button type="button">По названию</button></li>
-			</ul>
-			<button type="button">Вниз</button>
-			<button type="button">Вверх</button>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</section>
-	</main>
-
-	<footer>
-		<section>
-			<h2>Как нас найти</h2>
+		<section class="products">
+			<div class="sorting">
+				<h2 class="visually-hidden">Сортировка товаров</h2>
+				<p class="sorting__text">Сортировать:</p>
+				<ul class="sorting-list">
+					<li><a class="sorting-list__link button" href="#">По цене</a></li>
+					<li><a class="sorting-list__link button" href="#">По типу</a></li>
+					<li><a class="sorting-list__link button" href="#">По названию</a></li>
+				</ul>
+				<button class="sorting__button" type="button">Вниз</button>
+				<button class="sorting__button" type="button">Вверх</button>
+			</div>
+			<div class="template">
+				<ul class="template-list">
+					<li class="template-item">
+						<div class="template-item__path"></div>
+						<img src="#" alt="Шаблон сайта «Sedona»">
+						<div class="template-item__wrapper">
+							<h3 class="template-item__title">Sedona</h3>
+							<p class="template-item__text">Информационный сайт для туристов</p>
+							<button class="template-item__button button" type="button">9 900 ₽</button>
+						</div>
+					</li>
+					<li class="template-item">
+						<div class="template-item__path"></div>
+						<img src="#" alt="Шаблон сайта «Pink App»">
+						<div class="template-item__wrapper">
+							<h3 class="template-item__title">Pink App</h3>
+							<p class="template-item__text">Продуктовый лендинг приложения для iOS и Android</p>
+							<button class="template-item__button button" type="button">9 900 ₽</button>
+						</div>
+					</li>
+					<li class="template-item">
+						<div class="template-item__path"></div>
+						<img src="#" alt="Шаблон сайта «Barbershop»">
+						<div class="template-item__wrapper">
+							<h3 class="template-item__title">Barbershop</h3>
+							<p class="template-item__text">Сайт салона красоты. Для мужчин, да.</p>
+							<button class="template-item__button button" type="button">9 900 ₽</button>
+						</div>
+					</li>
+					<li class="template-item">
+						<div class="template-item__path"></div>
+						<img src="#" alt="Шаблон сайта «Mishka»">
+						<div class="template-item__wrapper">
+							<h3 class="template-item__title">Mishka</h3>
+							<p class="template-item__text">Интернет-магазин вязаных игрушек</p>
+							<button class="template-item__button button" type="button">9 900 ₽</button>
+						</div>
+					</li>
+					<li class="template-item">
+						<div class="template-item__path"></div>
+						<img src="#" alt="Шаблон сайта «A Plus»">
+						<div class="template-item__wrapper">
+							<h3 class="template-item__title">A Plus</h3>
+							<p class="template-item__text">Лендинг курсов повышения квалификации</p>
+							<button class="template-item__button button" type="button">9 900 ₽</button>
+						</div>
+					</li>
+					<li class="template-item">
+						<div class="template-item__path"></div>
+						<img src="#" alt="Шаблон сайта «КВАСТ»">
+						<div class="template-item__wrapper">
+							<h3 class="template-item__title">КВАСТ</h3>
+							<p class="template-item__text">Промо-сайт производителя крафтового кваса</p>
+							<button class="template-item__button button" type="button">9 900 ₽</button>
+						</div>
+					</li>
+				</ul>
+			</div>
 			<div>
-				<p>Nёrds design studio</p>
-				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				<p>тел. +7 (812) 275-75-75</p>
-				<a href="#">Напишите нам</a>
+				<ul class="list-page">
+					<li><a class="list-page__link" href="#">1</a></li>
+					<li><a class="list-page__link" href="#">2</a></li>
+					<li><a class="list-page__link" href="#">3</a></li>
+				</ul>
+				<button class="button-page" type="button">Следующая</button>
 			</div>
 		</section>
 
-		<section>
-			<h2>Социальные сети</h2>
-			<ul>
-				<li><a href="#">Вконтакте</a></li>
-				<li><a href="#">Фейсбук</a></li>
-				<li><a href="#">Инстаграм</a></li>
+	</main>
+
+	<footer class="main-footer">
+		<section class="footer-contacts">
+			<h2 class="visually-hidden">Как нас найти</h2>
+			<div class="contacts-box">
+				<h3 class="contacts-box__title">Nёrds design studio</h3>
+				<p class="contacts-box__text">
+					191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+					тел.<a href="tel:+78122757575"></a>+7 (812) 275-75-75
+				</p>
+				<a class="contacts-button button" href="#">Напишите нам</a>
+			</div>
+		</section>
+
+		<section class="footer-social">
+			<h2 class="visually-hidden">Социальные сети</h2>
+			<ul class="footer-social-list">
+				<!-- я правильно  -->
+				<li><a class="footer-social__link" href="#">Вконтакте</a></li>
+				<li><a class="footer-social__link" href="#">Фейсбук</a></li>
+				<li><a class="footer-social__link" href="#">Инстаграм</a></li>
 			</ul>
-		
-			<h2>Давайте дружить, это выгодно!</h2>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
+			<p class="footer-social__slogan">Давайте дружить, это выгодно!</p>
+			<p class="footer-social__text">Скидка 10% для друзей из социальных сетей.</p>
 		</section>
 	</footer>
-	
+
+	<section class="modal">
+		<h2 class="modal__title">Напишите нам</h2>
+		<p>Ваше имя:</p>
+		<!-- Здесь будет форма -->
+		<button type="button">Закрыть</button>
+	</section>
+
 </body>
 </html>
