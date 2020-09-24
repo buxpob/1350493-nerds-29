@@ -115,7 +115,7 @@ img {
 	background-color: var(--basic-gray);
 }
 
-.slide-slogan {
+.slide p:nth-child(1) {
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
@@ -123,16 +123,16 @@ img {
 	color: var(--special-black);
 }
 
-.slide-button {
+.slide a {
 background-color: var(--basic-lightred);
 }
 
-.slide-button:hover,
-.slide-button:focus {
+.slide a:hover,
+.slide a:focus {
 background-color: var(--basic-red);
 }
 
-.slide-button:active {
+.slide a:active {
 background-color: var(--basic-darkred);
 opacity: 0.3;
 }
@@ -148,7 +148,7 @@ opacity: 0.3;
 	list-style: none;
 }
 
-.service-title {
+.service-item h3 {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 30px;
@@ -200,7 +200,7 @@ opacity: 0.3;
 
 /*Info*/
 
-.info-slogan {
+.info p:nth-child(2) {
 	font-size: 45px;
 	font-weight: 500;
 	line-height: 45px;
@@ -208,12 +208,14 @@ opacity: 0.3;
 	color: var(--special-black);
 }
 
-.info-text {
+.info p:nth-child(4) {
 	font-size: 20px;
 	font-weight: 700;
 }
 
-.indicators-slogan {
+/*Indicators*/
+
+.indicators p {
 	font-size: 20px;
 }
 
@@ -221,7 +223,7 @@ opacity: 0.3;
 	list-style: none;
 }
 
-.indicators-info {
+.indicators-item p:nth-child(1) {
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 64px;
@@ -229,12 +231,12 @@ opacity: 0.3;
 	color: var(--basic-black);
 }
 
-.indicators-info span {
+.indicators-item span {
 	font-size: 26px;
 	line-height: 40px;
 }
 
-.indicators-text {
+.indicators-item p:nth-child(2) {
 	line-height: 18px;
 }
 
@@ -267,7 +269,7 @@ opacity: 0.3;
 	background-color: var(--basic-white);
 }
 
-.contacts-box-title {
+.contacts-box h3 {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 30px;
@@ -275,7 +277,8 @@ opacity: 0.3;
 	color: var(--special-black);
 }
 
-.contacts-box-address {
+.contacts-box address,
+.contacts-box p {
 	line-height: 18px;
 	font-style: normal;
 }
@@ -308,7 +311,7 @@ opacity: 0.3;
 	opacity: 0.3;
 }
 
-.footer-social-slogan {
+.footer-social p:nth-child(3) {
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 36px;
@@ -316,7 +319,7 @@ opacity: 0.3;
 	color: var(--special-black);
 }
 
-.footer-social-text {
+.footer-social p:nth-child(4) {
 	line-height: 22px;
 	color: var(--light-black);
 }
@@ -337,7 +340,7 @@ opacity: 0.3;
 
 /*Products*/
 
-.sorting-text {
+.sorting p {
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 30px;
@@ -358,7 +361,7 @@ opacity: 0.3;
 	opacity: 0.3;
 }
 
-.sorting-button {
+.sorting button {
 	opacity: 0.3;
 }
 
@@ -379,28 +382,18 @@ opacity: 0.3;
 	list-style: none;
 }
 
-.template-item-path {
-	widows: 360px;
-	height: 40px;
-
-	background-color: var(--basic-coal);
-	opacity: 0.12;
-}
-
-.template-item:hover .template-item-path,
-.template-item:focus .template-item-path,
-.template-item:hover .template-item-wrapper,
-.template-item:focus .template-item-wrapper {
+.template-item:hover .template-item-info,
+.template-item:focus .template-item-info {
 	opacity: 1;
 }
 
-.template-item-wrapper {
+.template-item-info {
 	background-color: var(--basic-gray);
 	opacity: 0;
 }
 
 
-.template-item-title {
+.template-item-info h3 {
 	font-size: 18px;
 	font-weight: 700;	
 	line-height: 30px;
@@ -408,23 +401,23 @@ opacity: 0.3;
 	color: var(--special-black);
 }
 
-.template-item-text {
+.template-item-info p {
 	font-size: 16px;
 	line-height: 18px;
 
 	color: var(--special-gray);
 }
 
-.template-item-button {
+.template-item button {
 	background-color: var(--basic-lightred);
 }
 
-.template-item-button:hover,
-.template-item-button:focus {
+.template-item button:hover,
+.template-item button:focus {
 	background-color: var(--basic-red);
 }
 
-.template-item-button:active {
+.template-item button:active {
 	background-color: var(--basic-darkred);
 }
 
