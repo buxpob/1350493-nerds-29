@@ -115,7 +115,7 @@ img {
 	background-color: var(--basic-gray);
 }
 
-.slide p:nth-child(1) {
+.slide-slogan {
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
@@ -200,7 +200,7 @@ opacity: 0.3;
 
 /*Info*/
 
-.info p:nth-child(2) {
+.info-slogan {
 	font-size: 45px;
 	font-weight: 500;
 	line-height: 45px;
@@ -208,14 +208,14 @@ opacity: 0.3;
 	color: var(--special-black);
 }
 
-.info p:nth-child(4) {
+.info-services {
 	font-size: 20px;
 	font-weight: 700;
 }
 
 /*Indicators*/
 
-.indicators p {
+.indicators-slogan {
 	font-size: 20px;
 }
 
@@ -223,7 +223,7 @@ opacity: 0.3;
 	list-style: none;
 }
 
-.indicators-item p:nth-child(1) {
+.indicators-value {
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 64px;
@@ -231,12 +231,12 @@ opacity: 0.3;
 	color: var(--basic-black);
 }
 
-.indicators-item span {
+.indicators-value span {
 	font-size: 26px;
 	line-height: 40px;
 }
 
-.indicators-item p:nth-child(2) {
+.indicators-text {
 	line-height: 18px;
 }
 
@@ -311,7 +311,7 @@ opacity: 0.3;
 	opacity: 0.3;
 }
 
-.footer-social p:nth-child(3) {
+.footer-social-slogan {
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 36px;
@@ -319,7 +319,7 @@ opacity: 0.3;
 	color: var(--special-black);
 }
 
-.footer-social p:nth-child(4) {
+.footer-social-text {
 	line-height: 22px;
 	color: var(--light-black);
 }
