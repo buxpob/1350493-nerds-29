@@ -81,7 +81,7 @@ img {
 /*main-navigation*/
 
 .main-navigation {
-	font-weight: 500;	
+	font-weight: 500;
 	line-height: 30px;
 
 	color: var(--basic-black);
@@ -95,6 +95,7 @@ img {
 .site-navigation a,
 .cart-navigation a {
 	color: var(--basic-black);
+	text-transform: uppercase;
 }
 
 .site-navigation a:hover,
@@ -143,6 +144,10 @@ opacity: 0.3;
 
 /*Services*/
 
+.services {
+	border-bottom: 2px solid var(--basic-gray);
+}
+
 .services-list {
 	outline-style: none;
 	list-style: none;
@@ -152,6 +157,7 @@ opacity: 0.3;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 30px;
+	text-transform: uppercase;
 
 	color: var(--special-black);
 }
@@ -215,8 +221,13 @@ opacity: 0.3;
 
 /*Indicators*/
 
+.indicators {
+	border-bottom: 2px solid var(--basic-gray); 
+}
+
 .indicators-slogan {
 	font-size: 20px;
+	text-transform: uppercase;
 }
 
 .indicators-list {
@@ -241,6 +252,9 @@ opacity: 0.3;
 }
 
 /*Manufacturers*/
+.manufacturers {
+	border-bottom: 2px solid var(--basic-gray);
+}
 
 .manufacturers-list {
 	list-style: none;
@@ -273,14 +287,20 @@ opacity: 0.3;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 30px;
+	text-transform: uppercase;
 
 	color: var(--special-black);
 }
 
 .contacts-box address,
 .contacts-box p {
+	color: var(--special-gray);
 	line-height: 18px;
 	font-style: normal;
+}
+
+.contacts-phone a {
+	color: var(--special-gray);
 }
 
 .contacts-button {
@@ -344,6 +364,7 @@ opacity: 0.3;
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 30px;
+	text-transform: uppercase;
 
 	color: var(--special-black);
 }
