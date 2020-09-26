@@ -463,4 +463,5 @@ opacity: 0.3;
 .button-page {
 	color: var(--special-black);
 	background-color: var(--basic-gray);
+	text-transform: uppercase;
 }
