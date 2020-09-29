@@ -116,7 +116,7 @@ img {
 	background-color: var(--basic-gray);
 }
 
-.slide-slogan {
+.slide-tagline {
 	font-size: 55px;
 	font-weight: 500;
 	line-height: 55px;
@@ -206,7 +206,7 @@ opacity: 0.3;
 
 /*Info*/
 
-.info-slogan {
+.info-tagline {
 	font-size: 45px;
 	font-weight: 500;
 	line-height: 45px;
@@ -225,7 +225,7 @@ opacity: 0.3;
 	border-bottom: 2px solid var(--basic-gray); 
 }
 
-.indicators-slogan {
+.indicators-tagline {
 	font-size: 20px;
 	text-transform: uppercase;
 }
@@ -331,7 +331,7 @@ opacity: 0.3;
 	opacity: 0.3;
 }
 
-.footer-social-slogan {
+.footer-social-tagline {
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 36px;
