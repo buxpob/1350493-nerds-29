@@ -364,6 +364,9 @@ opacity: 0.3;
 
 .footer-contacts-wrapper {
 	background-color: var(--basic-gray);
+	background-image: url(../img/map.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .footer-contacts {
@@ -430,6 +433,7 @@ opacity: 0.3;
 	background: var(--gradient-gray);
 	width: 81px;
 	height: 81px;
+	text-align: center;
 	border-radius: 50%;
 }
 
@@ -440,6 +444,9 @@ opacity: 0.3;
 
 .footer-social-list a:active {
 	background: var(--basic-darkred-gradient);
+}
+
+.footer-social-list a:active img {
 	opacity: 0.3;
 }
 
