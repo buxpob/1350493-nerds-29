@@ -55,6 +55,12 @@ img {
 	height: auto;
 }
 
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 /*Grid*/
 
 .page {
@@ -95,10 +101,6 @@ img {
 	display: grid;
 	grid-template-columns: 160px 1fr min-content;
 	column-gap: 20px;
-
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0 10px;
 
 	font-weight: 500;
 	line-height: 30px;
@@ -364,21 +366,28 @@ opacity: 0.3;
 
 .footer-contacts-wrapper {
 	background-color: var(--basic-gray);
-	background-image: url(../img/map.png);
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .footer-contacts {
-	width: 1160px;
+	width: 1440px;
 	margin: 0 auto;
 	padding: 0 10px;
+
+	display: grid;
+}
+
+.footer-contacts img {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
 }
 
 .contacts-box {
 	background-color: var(--basic-white);
 	width: 320px;
 	height: 310px;
+
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
 }
 
 .contacts-box h3 {
