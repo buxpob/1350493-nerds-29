@@ -34,92 +34,100 @@
 	<main>
 
 		<div class="catalog-title-wrapper">
-			<div class="container">
-				<h1 class="catalog-title">Магазин готовых шаблонов</h1>
-			</div>
+			<h1 class="catalog-title">Магазин готовых шаблонов</h1>
 		</div>
 
-		<div class="catalog-main-wrapper container">
-			<section class="filters">
-				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<p>Стоимость:</p>
-				<!-- Здесь будет форма -->
-			</section>
+		<div class="container">
+			<div class="catalog-main-wrapper">
+				<section class="filters">
+					<h2 class="visually-hidden">Фильтр товаров</h2>
+					<p>Стоимость:</p>
+					<!-- Здесь будет форма -->
+				</section>
 
-			<section class="catalog">
-				<div class="sorting">
-					<h2 class="visually-hidden">Сортировка товаров</h2>
-					<p>Сортировать:</p>
-					<ul class="sorting-list">
-						<li><a class="button" href="#">По цене</a></li>
-						<li><a class="button" href="#">По типу</a></li>
-						<li><a class="button" href="#">По названию</a></li>
-					</ul>
-					<button class="button-down" type="button"><span class="visually-hidden">Вниз</span></button>
-					<button class="button-up" type="button" disabled><span class="visually-hidden">Вверх</span></button>
-				</div>
-				<div class="products">
-					<ul class="products-list">
-						<li class="products-item">
-							<img src="img/catalog-template-sedona.jpg" width="358" height="578" alt="Шаблон сайта «Sedona»">
-							<div class="products-item-info">
-								<h3>Sedona</h3>
-								<p>Информационный сайт для туристов</p>
-								<button class="button" type="button">9 900 ₽</button>
-							</div>
-						</li>
-						<li class="products-item">
-							<img src="img/catalog-template-pink.jpg" width="358" height="578" alt="Шаблон сайта «Pink App»">
-							<div class="products-item-info">
-								<h3>Pink App</h3>
-								<p>Продуктовый лендинг приложения для iOS и Android</p>
-								<button class="button" type="button">9 900 ₽</button>
-							</div>
-						</li>
-						<li class="products-item">
-							<img src="img/catalog-template-barbershop.jpg" width="358" height="578" alt="Шаблон сайта «Barbershop»">
-							<div class="products-item-info">
-								<h3>Barbershop</h3>
-								<p>Сайт салона красоты. Для мужчин, да.</p>
-								<button class="button" type="button">9 900 ₽</button>
-							</div>
-						</li>
-						<li class="products-item">
-							<img src="img/catalog-template-mishka.jpg" width="358" height="578" alt="Шаблон сайта «Mishka»">
-							<div class="products-item-info">
-								<h3>Mishka</h3>
-								<p>Интернет-магазин вязаных игрушек</p>
-								<button class="button" type="button">9 900 ₽</button>
-							</div>
-						</li>
-						<li class="products-item">
-							<img src="img/catalog-template-aplus.jpg" width="358" height="578" alt="Шаблон сайта «A Plus»">
-							<div class="products-item-info">
-								<h3>A Plus</h3>
-								<p>Лендинг курсов повышения квалификации</p>
-								<button class="button" type="button">9 900 ₽</button>
-							</div>
-						</li>
-						<li class="products-item">
-							<img src="img/catalog-template-kvast.jpg" width="358" height="578" alt="Шаблон сайта «КВАСТ»">
-							<div class="products-item-info">
-								<h3>КВАСТ</h3>
-								<p>Промо-сайт производителя крафтового кваса</p>
-								<button class="button" type="button">9 900 ₽</button>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="number-page">
-					<p class="visually-hidden">Список страниц</p>
-					<ul class="list-page">
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-					</ul>
-					<button class="button-page" type="button">Следующая</button>
-				</div>
-			</section>
+				<section class="catalog">
+					<div class="sorting">
+						<h2 class="visually-hidden">Сортировка товаров</h2>
+						<p>Сортировать:</p>
+						<ul class="sorting-list">
+							<li><a class="button" href="#">По цене</a></li>
+							<li><a class="button" href="#">По типу</a></li>
+							<li><a class="button" href="#">По названию</a></li>
+						</ul>
+						<div class="sorting-buttons">
+							<button class="button-down" type="button">
+								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0H11" fill="#A6A6A6"/></svg>
+								<span class="visually-hidden">Вниз</span>
+							</button>
+							<button class="button-up" type="button" disabled>
+								<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/></svg>
+								<span class="visually-hidden">Вверх</span>
+							</button>
+						</div>
+					</div>
+					<div class="products">
+						<ul class="products-list">
+							<li class="products-item">
+								<img src="img/catalog-template-sedona.jpg" width="358" height="578" alt="Шаблон сайта «Sedona»">
+								<div class="products-item-info">
+									<a href="#"><h3>Sedona</h3></a>
+									<p>Информационный сайт<br>для туристов</p>
+									<button class="button" type="button">9 900 ₽</button>
+								</div>
+							</li>
+							<li class="products-item">
+								<img src="img/catalog-template-pink.jpg" width="358" height="578" alt="Шаблон сайта «Pink App»">
+								<div class="products-item-info">
+									<a href="#"><h3>Pink App</h3></a>
+									<p>Продуктовый лендинг приложения для iOS и Android</p>
+									<button class="button" type="button">9 900 ₽</button>
+								</div>
+							</li>
+							<li class="products-item">
+								<img src="img/catalog-template-barbershop.jpg" width="358" height="578" alt="Шаблон сайта «Barbershop»">
+								<div class="products-item-info">
+									<a href="#"><h3>Barbershop</h3></a>
+									<p>Сайт салона красоты. Для мужчин, да.</p>
+									<button class="button" type="button">9 900 ₽</button>
+								</div>
+							</li>
+							<li class="products-item">
+								<img src="img/catalog-template-mishka.jpg" width="358" height="578" alt="Шаблон сайта «Mishka»">
+								<div class="products-item-info">
+									<a href="#"><h3>Mishka</h3></a>
+									<p>Интернет-магазин вязаных игрушек</p>
+									<button class="button" type="button">9 900 ₽</button>
+								</div>
+							</li>
+							<li class="products-item">
+								<img src="img/catalog-template-aplus.jpg" width="358" height="578" alt="Шаблон сайта «A Plus»">
+								<div class="products-item-info">
+									<a href="#"><h3>A Plus</h3></a>
+									<p>Лендинг курсов повышения квалификации</p>
+									<button class="button" type="button">9 900 ₽</button>
+								</div>
+							</li>
+							<li class="products-item">
+								<img src="img/catalog-template-kvast.jpg" width="358" height="578" alt="Шаблон сайта «КВАСТ»">
+								<div class="products-item-info">
+									<a href="#"><h3>КВАСТ</h3></a>
+									<p>Промо-сайт производителя крафтового кваса</p>
+									<button class="button" type="button">9 900 ₽</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="number-page">
+						<p class="visually-hidden">Список страниц</p>
+						<ul class="list-page">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+						</ul>
+						<button class="button-page" type="button">Следующая</button>
+					</div>
+				</section>
+			</div>
 		</div>
 
 	</main>
@@ -130,10 +138,11 @@
 			<section class="footer-contacts">
 				<h2 class="visually-hidden">Как нас найти</h2>
 				<img src="img/map.png" width="1440" height="416" alt="Карта">
+				<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель места с надписью логотипа Nerds">
 				<div class="contacts-box">
 					<h3>Nёrds design studio</h3>
 					<address>
-						191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+						191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8
 					</address>
 					<p class="contacts-phone">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
 					<a class="contacts-button button" href="#">Напишите нам</a>
@@ -149,10 +158,10 @@
 					<li><a href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a></li>
 					<li><a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a></li>
 				</ul>
-				<p class="footer-social-text">
-					<span>Давайте дружить, это выгодно!</span><br>
+				<div class="footer-social-text">
+					<p>Давайте дружить, это выгодно!</p><br>
 					Скидка 10% для друзей из социальных сетей.
-				</p>
+				</div>
 			</section>
 		</div>
 	</footer>
