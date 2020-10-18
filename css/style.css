@@ -208,22 +208,26 @@ img {
 	opacity: 0.3;
 }
 
-.slide1 {
-	background-image: url(../img/index-slide1.png);
+.slides .slide:nth-child(2) {
+	background-image: url("../img/index-slide1.png");
 	background-repeat: no-repeat;
 	background-position: 100% 0%;
 }
 
-.slide2 {
-	background-image: url(../img/index-slide2.png);
+.slides .slide:nth-child(3) {
+	background-image: url("../img/index-slide2.png");
 	background-repeat: no-repeat;
 	background-position: 100% 0%;
+
+	display: none;
 }
 
-.slide3 {
-	background-image: url(../img/index-slide3.png);
+.slides .slide:nth-child(4) {
+	background-image: url("../img/index-slide3.png");
 	background-repeat: no-repeat;
 	background-position: 100% 0%;
+
+	display: none;
 }
 
 .list-slides {
@@ -588,11 +592,8 @@ img {
 
 /*Catalog*/
 
-.container-title-wrapper {
+.catalog-title-wrapper {
 	background-color: var(--basic-gray);
-}
-
-.container-title {
 	padding-top: 70px;
 	padding-bottom: 108px;
 
@@ -672,25 +673,25 @@ img {
 	opacity: 1;
 }
 
-.template-list {
+.products-list {
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 40px;
 }
 
-.template-item:hover .template-item-info,
-.template-item:focus .template-item-info {
+.products-item:hover .products-item-info,
+.products-item:focus .products-item-info {
 	opacity: 1;
 }
 
-.template-item-info {
+.products-item-info {
 	background-color: var(--basic-gray);
 	opacity: 0;
 }
 
 
-.template-item-info h3 {
+.products-item-info h3 {
 	font-size: 18px;
 	font-weight: 700;	
 	line-height: 30px;
@@ -698,23 +699,23 @@ img {
 	color: var(--special-black);
 }
 
-.template-item-info p {
+.products-item-info p {
 	font-size: 16px;
 	line-height: 18px;
 
 	color: var(--special-gray);
 }
 
-.template-item button {
+.products-item button {
 	background-color: var(--basic-lightred);
 }
 
-.template-item button:hover,
-.template-item button:focus {
+.products-item button:hover,
+.products-item button:focus {
 	background-color: var(--basic-red);
 }
 
-.template-item button:active {
+.products-item button:active {
 	background-color: var(--basic-darkred);
 }
 
