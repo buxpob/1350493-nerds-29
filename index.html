@@ -179,11 +179,24 @@
 		</div>
 	</footer>
 
-	<section class="modal container">
-		<h2 class="modal-title">Напишите нам</h2>
-		<p>Ваше имя:</p>
-		<!-- Здесь будет форма -->
-		<button type="button">Закрыть</button>
+	<section class="modal-letter">
+		<h2>Напишите нам</h2>
+		<form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label for="letter-login">Ваше имя:</label>
+				<input type="text" name="login" id="letter-login" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="letter-email">Ваш email:</label>
+				<input type="email" name="email" id="letter-email" placeholder="email@example.com ">
+			</p>
+			<p>
+				<label for="letter-text">Текст письма:</label>
+				<textarea type="text" name="text" id="letter-text" placeholder="В свободной форме"></textarea>
+			</p>
+			<button type="submit">Отправить</button>
+		</form>
+		<button class="modal-close" type="button" aria-label="Закрыть"></button>
 	</section>
 
 </body>
