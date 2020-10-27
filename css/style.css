@@ -965,11 +965,12 @@ img {
 
 .filter-item:nth-child(2) {
 	margin-bottom: 25px;
+	width: 170px;
 }
 
 .filter-radio {
 	margin-bottom: 21px;
-	padding-left:37px;
+	padding-left: 37px;
 }
 
 .filter-option label {
@@ -1048,6 +1049,7 @@ img {
 
 .filter-item:nth-child(3) {
 	margin-bottom: 50px;
+	width: 190px;
 }
 
 .filter-button {
@@ -1082,7 +1084,7 @@ img {
 	margin-bottom: 48px;
 }
 
-.sorting p {
+.sorting h2 {
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 30px;
