@@ -970,12 +970,15 @@ img {
 
 .filter-radio {
 	margin-bottom: 21px;
-	padding-left: 37px;
+}
+
+.filter-radio label {
+	padding-left: 36px;
 }
 
 .filter-option label {
-	display: block;
 	position: relative;
+	display: block;
 	cursor: pointer;
 	user-select: none;
 }
@@ -991,7 +994,7 @@ img {
 	width: 25px;
 	height: 25px;
 	top: -4px;
-	left: -38px;
+	left: 0;
 	border: 3px solid var(--basic-coal);
 	border-radius: 50%;
 	opacity: 0.4;
@@ -1003,7 +1006,7 @@ img {
 	width: 9px;
 	height: 9px;
 	top: 4px;
-	left: -30px;
+	left: 8px;
 	border-radius: 50%;
 	background-color: var(--basic-coal);
 	opacity: 0.4;
@@ -1011,7 +1014,6 @@ img {
 
 .filter-checkbox {
 	margin-top: 21px;
-	padding-left: 37px;
 }
 
 .filter-checkbox:first-child {
@@ -1020,11 +1022,11 @@ img {
 
 .filter-checkbox-input + label::before {
 	content: "";
-	position: absolute;
+	box-sizing: border-box;
+	padding-right: 37px;
 	width: 25px;
 	height: 23px;
-	top: -2px;
-	left: -37px;
+	padding: 2px 36px 2px 0;
 	opacity: 0.4;
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
