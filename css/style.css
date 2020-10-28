@@ -978,7 +978,6 @@ img {
 
 .filter-option label {
 	position: relative;
-	display: block;
 	cursor: pointer;
 	user-select: none;
 }
@@ -1023,7 +1022,6 @@ img {
 .filter-checkbox-input + label::before {
 	content: "";
 	box-sizing: border-box;
-	padding-right: 37px;
 	width: 25px;
 	height: 23px;
 	padding: 2px 36px 2px 0;
@@ -1086,7 +1084,7 @@ img {
 	margin-bottom: 48px;
 }
 
-.sorting h2 {
+.sorting-title {
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 30px;
