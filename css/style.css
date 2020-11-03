@@ -70,6 +70,13 @@ img {
 	padding: 0 10px;
 }
 
+.button {
+	color: var(--basic-white);
+	font-weight: 500;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
 /*Grid*/
 
 .page {
@@ -81,13 +88,6 @@ img {
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
 	align-content: start;
-}
-
-.button {
-	color: var(--basic-white);
-	font-weight: 500;
-	line-height: 18px;
-	text-transform: uppercase;
 }
 
 /*visibility*/
