@@ -148,7 +148,7 @@
 		<div class="footer-contacts-wrapper">
 			<section class="footer-contacts">
 				<h2 class="visually-hidden">Как нас найти</h2>
-				<img src="img/map.png" width="1440" height="416" alt="Карта">
+				<a class="map-button" href="#"><img src="img/map.png" width="1440" height="416" alt="Карта"></a>
 				<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель места с надписью логотипа Nerds">
 				<div class="contacts-box">
 					<h3>Nёrds design studio</h3>
@@ -177,7 +177,7 @@
 		</div>
 	</footer>
 
-	<section class="modal-letter">
+	<section class="modal modal-letter">
 		<h2>Напишите нам</h2>
 		<form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
 			<p>
@@ -197,7 +197,14 @@
 		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>
 
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Как до нас добраться</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604495892813!5m2!1sru!2sru" width="960" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<button class="modal-close modal-close-map" type="button"><span class="visually-hidden">Закрыть</span></button>
+	</section>
+
 	<script src="js/modal.js"></script>
+	<script src="js/map.js"></script>
 
 </body>
 </html>
