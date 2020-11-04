@@ -156,7 +156,7 @@
 						191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8
 					</address>
 					<p class="contacts-phone">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
-					<a class="contacts-button button" href="#">Напишите нам</a>
+					<a class="contacts-button button" href="#"><span>Напишите нам</span></a>
 				</div>
 			</section>
 		</div>
@@ -182,20 +182,22 @@
 		<form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
 			<p>
 				<label for="letter-login">Ваше имя:</label>
-				<input type="text" name="login" id="letter-login" placeholder="Имя Фамилия">
+				<input class="modal-letter-name" type="text" name="login" id="letter-login" placeholder="Имя Фамилия">
 			</p>
 			<p>
 				<label for="letter-email">Ваш email:</label>
-				<input type="email" name="email" id="letter-email" placeholder="email@example.com ">
+				<input class="modal-letter-email" type="email" name="email" id="letter-email" placeholder="email@example.com ">
 			</p>
 			<p>
 				<label for="letter-text">Текст письма:</label>
-				<textarea type="text" name="text" id="letter-text" placeholder="В свободной форме"></textarea>
+				<textarea class="modal-letter-text" type="text" name="text" id="letter-text" placeholder="В свободной форме"></textarea>
 			</p>
 			<button type="submit">Отправить</button>
 		</form>
 		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>
+
+	<script src="js/modal.js"></script>
 
 </body>
 </html>
