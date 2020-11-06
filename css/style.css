@@ -794,7 +794,7 @@ img {
 
 .letter-form input[type="text"],
 .letter-form input[type="email"],
-.letter-form textarea[type="text"] {
+.letter-form textarea {
 	box-sizing: border-box;
 	width: 360px;
 	padding: 11px 14px;
@@ -805,17 +805,17 @@ img {
 
 .letter-form input[type="text"]:hover,
 .letter-form input[type="email"]:hover,
-.letter-form textarea[type="text"]:hover {
+.letter-form textarea:hover {
 	border: 2px solid var(--darkgray);
 }
 
 .letter-form input[type="text"]:focus,
 .letter-form input[type="email"]:focus,
-.letter-form textarea[type="text"]:focus {
+.letter-form textarea:focus {
 	border: 2px solid var(--special-black);
 }
 
-.letter-form textarea[type="text"] {
+.letter-form textarea {
 	width: 760px;
 	min-height: 118px;
 }
