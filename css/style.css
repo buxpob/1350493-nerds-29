@@ -815,6 +815,11 @@ img {
 	border: 2px solid var(--special-black);
 }
 
+.modal input:required {
+	color: red;
+	border-color: red;
+}
+
 .letter-form textarea {
 	width: 760px;
 	min-height: 118px;
