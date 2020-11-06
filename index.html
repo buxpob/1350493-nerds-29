@@ -182,17 +182,17 @@
 		<form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
 			<p>
 				<label for="letter-login">Ваше имя:</label>
-				<input class="modal-letter-name" type="text" name="login" id="letter-login" placeholder="Имя Фамилия">
+				<input class="modal-letter-name" type="text" name="login" id="letter-login" placeholder="Имя Фамилия" required>
 			</p>
 			<p>
 				<label for="letter-email">Ваш email:</label>
-				<input class="modal-letter-email" type="email" name="email" id="letter-email" placeholder="email@example.com ">
+				<input class="modal-letter-email" type="email" name="email" id="letter-email" placeholder="email@example.com" required>
 			</p>
 			<p>
 				<label for="letter-text">Текст письма:</label>
-				<textarea class="modal-letter-text" name="text" id="letter-text" placeholder="В свободной форме"></textarea>
+				<textarea class="modal-letter-text" name="text" id="letter-text" placeholder="В свободной форме" required></textarea>
 			</p>
-			<button type="submit">Отправить</button>
+			<button class="letter-form-button" type="submit">Отправить</button>
 		</form>
 		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>

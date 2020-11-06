@@ -792,8 +792,7 @@ img {
 	margin-bottom:9px;
 }
 
-.letter-form input[type="text"],
-.letter-form input[type="email"],
+.letter-form input,
 .letter-form textarea {
 	box-sizing: border-box;
 	width: 360px;
@@ -803,21 +802,19 @@ img {
 	border-radius: 3px;
 }
 
-.letter-form input[type="text"]:hover,
-.letter-form input[type="email"]:hover,
+.letter-form input:hover,
 .letter-form textarea:hover {
 	border: 2px solid var(--darkgray);
 }
 
-.letter-form input[type="text"]:focus,
-.letter-form input[type="email"]:focus,
+.letter-form input:focus,
 .letter-form textarea:focus {
 	border: 2px solid var(--special-black);
 }
 
-.modal input:required {
-	color: red;
-	border-color: red;
+.letter-form input:required {
+	color: var(--basic-red);
+	border-color: var(--basic-red);
 }
 
 .letter-form textarea {
@@ -825,7 +822,7 @@ img {
 	min-height: 118px;
 }
 
-.letter-form button {
+.letter-form-button {
 	font-weight: 500;
 	text-transform: uppercase;
 	line-height: 18px;
@@ -835,6 +832,20 @@ img {
 	background-color: var(--basic-lightred);
 	border: none;
 	border-radius: 3px;
+	cursor: pointer;
+}
+
+.letter-form-button:hover,
+.letter-form-button:focus {
+	background-color: var(--basic-red);
+}
+
+.letter-form-button:active {
+	background-color: var(--basic-darkred);
+}
+
+.letter-form-button:active span {
+	opacity: 0.3;
 }
 
 /*Modal-map*/
