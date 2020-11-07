@@ -129,7 +129,7 @@ img {
 	height: 65px;
 }
 
-.main-header-logo:active path {
+.main-header-link:active path {
 	fill: var(--origin-gray);
 }
 
@@ -792,14 +792,34 @@ img {
 	margin-bottom:9px;
 }
 
+.letter-form input:invalid,
+.letter-form textarea:invalid {
+	color: var(--basic-red);
+	border-color: var(--basic-red);
+}
+
+.letter-form input:empty,
+.letter-form textarea:empty {
+	color: var(--basic-red);
+	border-color: var(--basic-red);
+}
+
+.letter-form input:valid {
+	color: var(--light-black);
+	border-color: var(--light-black);
+}
+
 .letter-form input,
 .letter-form textarea {
 	box-sizing: border-box;
-	width: 360px;
 	padding: 11px 14px;
 	font: inherit;
 	border: 2px solid var(--gray);
 	border-radius: 3px;
+}
+
+.letter-form input {
+	width: 360px;
 }
 
 .letter-form input:hover,
@@ -810,17 +830,6 @@ img {
 .letter-form input:focus,
 .letter-form textarea:focus {
 	border: 2px solid var(--special-black);
-}
-
-.letter-form input:invalid:required,
-.letter-form textarea:invalid:required {
-	color: var(--basic-red);
-	border-color: var(--basic-red);
-}
-
-.letter-form input:valid {
-	color: var(--light-black);
-	border-color: var(--light-black);
 }
 
 .letter-form textarea {
@@ -1394,12 +1403,22 @@ img {
 	background-color: var(--basic-gray);
 }
 
+.button-page-next {
+	width: 260px;
+	padding: 16px 78px;
+	border: none;
+	color: var(--special-black);
+	background-color: var(--basic-gray);
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
 .pagination-list a:not(.page-current):hover,
 .button-page-next:hover {
 	background-color: var(--light-gray);
 }
 
-.pagination-list a:not(.page-current)active,
+.pagination-list a:not(.page-current):active,
 .button-page-next:active {
 	background-color: var(--basic-darkgray);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -1409,16 +1428,6 @@ img {
 .pagination-list .page-current {
 	background-color: var(--basic-white);
 	border: 3px solid var(--special-grayscale);
-}
-
-.button-page-next {
-	width: 260px;
-	padding: 16px 78px;
-	border: none;
-	color: var(--special-black);
-	background-color: var(--basic-gray);
-	text-transform: uppercase;
-	cursor: pointer;
 }
 
 /*Animations*/

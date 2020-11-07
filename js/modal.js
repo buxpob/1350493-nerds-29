@@ -51,7 +51,7 @@ contactForm.addEventListener("submit", function(evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-	if (evt.keyCode === 27) {
+	if (evt.key === "Escape") {
 		if (contactPopup.classList.contains("modal-show")) {
 			evt.preventDefault();
 			contactPopup.classList.remove("modal-show");
