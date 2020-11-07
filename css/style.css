@@ -812,9 +812,15 @@ img {
 	border: 2px solid var(--special-black);
 }
 
-.letter-form input:required {
+.letter-form input:invalid:required,
+.letter-form textarea:invalid:required {
 	color: var(--basic-red);
 	border-color: var(--basic-red);
+}
+
+.letter-form input:valid {
+	color: var(--light-black);
+	border-color: var(--light-black);
 }
 
 .letter-form textarea {
@@ -853,7 +859,7 @@ img {
 .modal-map {
 	width: 960px;
 	height: 560px;
-	border: 7px solid white;
+	border: 7px solid var(--basic-white);
 }
 
 .modal-map iframe {
