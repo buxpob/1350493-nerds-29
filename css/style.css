@@ -220,7 +220,7 @@ img {
 
 .slide {
 	display: none;
-	padding-top: 74px;
+	padding-top: 72px;
 	padding-bottom: 92px;
 }
 
@@ -282,11 +282,14 @@ img {
 }
 
 .slide-list-button {
+	padding: 0;
+	margin: 0;
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	position: absolute;
-	left: 43%;
-	top: 70%;
+	left: 46%;
+	top: 74%;
 }
 
 .slide-list-button button {
@@ -320,8 +323,8 @@ img {
 }
 
 .services {
-	padding-top: 64px;
-	padding-bottom: 65px;
+	padding-top: 66px;
+	padding-bottom: 67px;
 	border-bottom: 2px solid var(--basic-gray);
 }
 
@@ -401,7 +404,7 @@ img {
 	background-color: var(--basic-darkyellow);
 }
 
-.service-item a:active span {
+.service-link:active span {
 	opacity: 0.3;
 }
 
@@ -523,53 +526,49 @@ img {
 
 .manufacturers {
 	border-bottom: 2px solid var(--basic-gray);
-	padding-top: 45px;
+	padding-top: 48px;
 	padding-bottom: 25px;
 }
 
 .manufacturers-list {
-	padding: 0 25px;
+	padding: 0 20px 0 30px;
 	margin: 0;
 	list-style: none;
 
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 }
 
 .manufacturers-list a {
-	position: relative;
-	width: 210px;
+	width: 208px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	opacity: 0.2;
 }
 
-.manufacturers-list li:first-child {
-	padding-top: 15px;
+.manufacturers-item:first-child a {
+	padding-top: 13px;
 }
 
-.manufacturers-list li:nth-child(4) {
-	padding-bottom: 15px;
-}
-
-.manufacturers-list li:not(:nth-child(4n)) {
-	margin-right: 90px;
-	margin-bottom: 20px;
-}
-
-.manufacturers-list li {
+.manufacturers-item {
+	display: flex;	
 	position: relative;
+	margin-bottom: 20px;
+	margin-right: 92px;
 }
 
-.manufacturers-list li:not(:nth-child(4n))::before {
+.manufacturers-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.manufacturers-item:not(:nth-child(4n))::before  {
 	position: absolute;
 	content: "";
 	width: 2px;
-	height: 48px;
+	height: 52px;
 	right: -46px;
-	top: 22px;
+	top: 20px;
 	background-color: var(--basic-gray);
 }
 
@@ -605,9 +604,9 @@ img {
 .contacts-box {
 	position: absolute;
 	top: 54px;
-	left: 148px;
+	left: 150px;
 	background-color: var(--basic-white);
-	padding: 50px 52px;
+	padding: 50px 50px;
 }
 
 .contacts-box h3 {
@@ -687,7 +686,7 @@ img {
 	flex-wrap: wrap;
 }
 
-.footer-social-list a {
+.footer-social-link {
 	display: flex;
 	background: var(--gradient-gray);
 	width: 78px;
@@ -698,16 +697,16 @@ img {
 	border-radius: 50%;
 }
 
-.footer-social-list a:hover,
-.footer-social-list a:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
 	background: var(--basic-red-gradient);
 }
 
-.footer-social-list a:active {
+.footer-social-link:active {
 	background: var(--basic-darkred-gradient);
 }
 
-.footer-social-list a:active img {
+.footer-social-link:active img {
 	opacity: 0.3;
 }
 
@@ -925,7 +924,7 @@ img {
 
 .catalog-title-wrapper {
 	background-color: var(--basic-gray);
-	padding-top: 72px;
+	padding-top: 70px;
 	padding-bottom: 108px;
 
 	text-align: center;
@@ -937,7 +936,7 @@ img {
 	line-height: 55px;
 
 	margin: 0;
-	margin-left: -20px;
+	margin-left: -8px;
 }
 
 .catalog-main {
@@ -945,7 +944,7 @@ img {
 	grid-template-columns: 380px 1fr;
 	grid-gap: 20px;
 
-	padding-top: 55px;
+	padding-top: 53px;
 	padding-bottom: 58px;
 }
 
@@ -964,7 +963,7 @@ img {
 
 .range-filter {
 	width: 260px;
-	margin-top: 49px;
+	margin-top: 47px;
 }
 
 .filter-item legend {
@@ -1034,6 +1033,13 @@ img {
 	border: none;
 	border-radius: 3px;
 	background-color: var(--basic-gray);
+	appearance:textfield;
+}
+
+.price-controls input::-webkit-outer-spin-button,
+.price-controls input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 .filter-item ul {
@@ -1116,7 +1122,9 @@ img {
 }
 
 .filter-input:hover + label::before,
-.filter-input:hover + label::after {
+.filter-input:focus + label::before,
+.filter-input:hover + label::after,
+.filter-input:focus + label::after {
 	opacity: 1;
 }
 
@@ -1154,7 +1162,6 @@ img {
 }
 
 /*Catalog*/
-
 
 .sorting {
 	display: flex;
@@ -1215,22 +1222,22 @@ img {
 	display: flex;
 }
 
-.sorting-buttons button {
+.sorting-button-arrow {
 	border: none;
 	background-color: var(--basic-white);
 	opacity: 0.2;
 	cursor: pointer;
 }
 
-.sorting-buttons button:hover {
+.sorting-button-arrow:hover {
 	opacity: 1;
 }
 
-.sorting-buttons button:active path {
+.sorting-button-arrow:active path {
 	fill: var(--special-black);
 }
 
-.sorting-buttons .sorting-button-current path {
+.sorting-button-current path {
 	fill: var(--special-black);
 }
 
@@ -1293,12 +1300,11 @@ img {
 	width: 360px;
 	box-sizing: border-box;
 	text-align: center;
-	padding: 26px 53px 43px;
+	padding: 24px 53px 43px;
 	border-radius: 5px;
 }
 
-.products-item:hover .products-item-info,
-.products-item:focus .products-item-info {
+.products-item:hover .products-item-info {
 	opacity: 1;
 }
 
@@ -1321,12 +1327,12 @@ img {
 
 .products-item-info h3 {
 	margin: 0;
+	margin-bottom: 13px;
 }
 
-.products-item-info a {
+.products-item-link {
 	display: inline-block;
-	margin: 0 auto;
-	margin-bottom: 12px;
+	vertical-align: middle;
 	padding: 0 10px;
 	font-size: 18px;
 	font-weight: 700;
@@ -1335,19 +1341,19 @@ img {
 	color: var(--special-black);
 }
 
-.products-item-info a:hover,
-.products-item-info a:focus {
+.products-item-link:hover,
+.products-item-link:focus {
 	color: var(--basic-lightred);
 }
 
-.products-item-info a:active {
+.products-item-link:active {
 	color: var(--special-black);
 	opacity: 0.3;
 }
 
 .products-item-info p {
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 	max-height: 250px;
 	overflow: auto;
 	font-size: 16px;
@@ -1356,21 +1362,26 @@ img {
 	color: var(--special-gray);
 }
 
-.products-item button {
+.products-item-button {
 	background-color: var(--basic-lightred);
-	padding: 17px 70px;
+	padding: 17px 72px;
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
 }
 
-.products-item button:hover,
-.products-item button:focus {
+.products-item-button:hover,
+.products-item-button:focus {
 	background-color: var(--basic-red);
 }
 
 .products-item button:active {
 	background-color: var(--basic-darkred);
+}
+
+.products-item-link:focus .products-item-info,
+.products-item-button:focus .products-item-info {
+	opacity: 1;
 }
 
 /*Pagination*/
