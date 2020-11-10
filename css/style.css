@@ -1304,7 +1304,8 @@ img {
 	border-radius: 5px;
 }
 
-.products-item:hover .products-item-info {
+.products-item:hover .products-item-info,
+.products-item:focus-within .products-item-info{
 	opacity: 1;
 }
 
